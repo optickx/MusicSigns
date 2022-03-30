@@ -1,0 +1,261 @@
+/* HOJA DE ESTILO */
+/* ————————————————————————————————————————— */
+/* DEFINICIÓN DE DISEÑO GENERAL BODY */
+body {
+    max-height: 100%;
+    min-height: 100%;
+    font-family: Arial; 
+    background-image: url(../img/abba.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+/* HACE QUE CUALQUIER ELEMENTO SE AJUSTE A LOS CAMPOS QUE CONTIENE */
+#wrap {
+    min-height: 100%;
+}
+/* CLASE QUE DEFINE EL DISEÑO DE NAVEGACIÓN DE INICIO SUPERIOR */
+.menuInicio1 {
+    text-decoration: none;
+    background-color:rgba(2, 1, 0,1);
+    height: auto;
+    width: auto;
+    text-align: center;
+    font-size:40px;
+    object-fit: cover;
+    overflow: hidden;
+}
+/* CLASE QUE DEFINE LAS PROPIEDADES DEL LOGO SUPERIOR */
+.logo {
+    size: static;
+    width: 100px;
+    margin-left: -120%;
+}
+/* CLASE QUE DEFINE LAS PROPIEDADES DEL TEXTO DE LA BARRA DE NAVEGACIÓN*/
+.textoNav {
+    margin-left: -560px;
+    text-align: left;
+}
+/* CLASE QUE DEFINE EL DISEÑO DE MENÚ DE NAVEGACIÓN INFERIOR */
+.menuInicio2 {
+    text-decoration: none;
+    background-color:rgba(160, 129, 2, 0.75); 
+    height: auto; 
+    width: auto;
+    text-align: center;
+    font-size:40px
+}
+
+/* DROPDOWN MENU */
+/* CLASE QUE DEFINE EL BOTÓN DEL MENÚ DROPDOWN */
+.dropbtn {
+    background-color: rgba(160, 129, 2, 0);
+    color: rgba(255, 255, 255, 0);
+    font-size: 16px;
+    border: none;
+}
+/* CLASE QUE DEFINE EL CONTENIDO DEL BOTÓN DE MENÚ DROPDOWN */
+.dropdown {
+    background-image: url(../img/house.png);
+    background-size: cover ;
+    position: relative;
+    display: inline-block;
+}
+/* CLASE QUE DEFINE EL DISEÑO DEL CONTENIDO DEL MENÚ DROPDOWN */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(160, 129, 2, 0.75);
+    width: 300px;
+    box-shadow: 0px 8px 16px 0px black;
+    z-index: 1;
+    height: 208px;
+} 
+/* SELECTOR QUE DEFINE EL DISEÑO DE LA ETIQUETA a EN EL MENÚ DROPDOWN */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+} 
+/* SELECTOR QUE APLICA PROPIEDADES HOVER AL MENÚ DROPDOWN */
+.dropdown-content a:hover {
+    background-color: rgba(160, 129, 2, 0.75);
+}
+/* CLASE QUE APLICA PROPIEDADES HOVER AL MENÚ DROPDOWN */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* CLASE QUE APLICA PROPIEDADES HOVER AL MENÚ DROPDOWN */
+.dropdown:hover {
+    background-color: rgba(160, 129, 2, 0.75);
+}
+/* DROPDOWN MENU END */
+    
+/* AJUSTES A LAS BARRAS DE NAVEGACIÓN */
+nav a {
+    margin: auto;
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    color: rgb(216, 216, 216);
+}
+nav {
+    display: flex;
+    flex-direction:row;
+}
+/* CLASE QUE CENTRA ELEMENTOS */
+.mid { 
+    margin: auto;
+}
+/* CLASE QUE DEFINE EL DISEÑO DEL TEXTO PRINCIPAL */
+.mp {
+    opacity: 1;
+    font-size: 20px;
+}
+fieldset.gray {
+    padding: 2%; /*Is the margin of the elements inside the "box"*/
+    width: 600px; 
+    background-color: rgba(9, 9, 10, 0.9) ; 
+    border: none;
+}
+div>div{
+    position: relative;
+    width: 400px;
+    height: 200px;
+}
+
+/* TRANSICIÓN DE IMÁGENES */
+div > img {
+    display: block;
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    -webkit-transition: all .4s ease;
+       -moz-transition: all .4s ease;
+        -ms-transition: all .4s ease;
+         -o-transition: all .4s ease;
+            transition: all .4s ease;
+}
+div > img:nth-child(1) {
+    filter: alpha(opacity=100); 
+    opacity: 1;
+    z-index: 3;
+}
+div > img:nth-child(2) { 
+    filter: alpha(opacity=0); 
+    opacity: 0;
+    z-index: 1;
+}
+
+/* HOVER */
+div:hover > img:nth-child(1) { 
+    filter: alpha(opacity=0);
+    opacity: 0;
+    z-index: 1;
+}
+div:hover > img:nth-child(2) { 
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+    z-index: 3;
+}
+/* FIN TRANSICIÓN DE IMÁGENES */
+
+/* CLASE QUE DEFINE EL TAMAÑO DE LAS IMÁGENES*/
+.picsize {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+/* CLASE QUE EVITA SALTOS DE LÍNEA ENTRE IMÁGENES*/
+.inlineTag {
+    display: flex;
+    flex-direction: row;
+}
+/* CLASE QUE CENTRA EL TEXTO AL MEDIO DE UN CONTENEDOR */
+.mCenter {
+    size: fixed;
+    margin:0 auto;
+    left:-2%;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+/* CLASE QUE CENTRA EL TEXTO */
+.centered {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 27%;
+    z-index: 2;
+}
+/* CLASE QUE ALINEA LOS CONTENIDOS DE h1 */
+h1 {
+    text-align: center;
+}
+/* CLASE QUE DEFINE EL DISEÑO DEL FORMULARIO */
+fieldset.form {
+    padding: 5%; /*MARGEN DE LOS ELEMENTOS RESPECTO A LOS BORDES*/
+    width: 1000px; 
+    background-color: rgba(9, 9, 10, 0.9) ; 
+    border: none;
+    text-align: left;
+}
+/* CLASE QUE DEFINE EL DISEÑO DEL FOOTER*/
+footer {
+    background-color: rgba(9, 9, 10, 0.9) ;
+    left: 0;
+    bottom: auto;
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -190px;
+}
+/* CLASE QUE DESTACA TEXTO */
+.bold {
+    font-weight: bold;
+}
+/* TRANSICIONES PARA MENÚ DROPDOWN */
+nav.menuInicio2>a:hover, .dropdown:hover, .dropdown-content a:hover {
+    -webkit-transition: all .4s ease-in-out;
+       -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+         -o-transition: all .4s ease;
+            transition: all 0.4s ease-in-out;
+    background-color:rgba(160, 129, 2, 0.80) ;
+}
+/* CLASE QUE HACE LOS br NO SELECCIONABLES */
+br {
+    -webkit-user-select: none; /*Safari*/        
+       -moz-user-select: none; /*Firefox*/
+        -ms-user-select: none; /*Internet explorer y edge*/
+         -o-user-select: none; /*Opera*/
+            user-select: none; /*Standard*/
+}
+/* CAMBIO DE FUENTE PARA EL CONTENIDO DE h3 */
+h3 {
+    font-size: 24px;
+}
+/* TAMAÑO DE LOS ICONOS */
+.footerPic {
+    height: 70px;
+    padding: 0%;
+}
+/* TAMAÑO DEL ICONO DE YOUTUBE */
+.youTube {
+    height: 65px;
+    padding: 0%;
+}
+/* CAMBIO DE FUENTE DEL FOOTER */
+.footerText {
+    font-size: 25px;
+}
+footer > a {
+    text-decoration: none;
+}

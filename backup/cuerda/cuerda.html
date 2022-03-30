@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<head>
+    <title>Instrumentos de Cuerda</title>
+    <link rel="stylesheet" type="text/css" href="../style/estiloCuerda.css">
+</head>
+<body>
+    <!-- INICIO BARRA DE NAVEGACIÓN -->
+    <nav class="menuInicio1">
+        <a><img class="logo"  src="../img/logo.PNG"/></a>
+        <a class="textoNav">Música por músicos</a>
+    </nav>
+    <nav class="menuInicio2" id="wrap">
+        <div class="dropdown">
+            <button href="../Inicio.html" class="dropbtn"> Home </button> 
+            <div class="dropdown-content">
+                <a href="../Inicio.html#Inicio"> Inicio </a>
+                <a href="../Inicio.html#Boletin"> Boletín </a>
+                <a href="../Inicio.html#Final"> Final </a>
+            </div>
+        </div>
+        <a href="cuerda.html" class="bold"> Cuerda </a> 
+        <a href="../percusion/percusion.html"> Percusión </a>
+        <a href="../viento/viento.html"> Viento </a>
+    </nav>
+    <!-- FIN BARRA DE NAVEGACIÓN -->
+
+    <br><br><br>
+
+    <fieldset class="gray mid">
+        <div class="mp">
+            Los intrsumentos de cuerda están reguapos tronko. Quiero decir. Es una cuerda que hace musica macho. Es la mejor utilidad
+            que podrías darle a una aparte de para quitarte la vida.
+        </div>
+    </fieldset>
+    <br>
+    <fieldset class="gray mid">
+        <a class="title">Tipos de instrumentos de cuerda</a>
+        <table>
+            <tr>
+                <td>Cuerda frotada</td>
+                <td colspan="2">Cuerda pulsada</td>
+                <td>Percutida</td>
+            </tr>
+            <tr>
+                <td>Con trastes</td>
+                <td>Sin mastil y sin teclado</td>
+                <td>Sin mástil con teclado</td>
+                <td>Con teclado</td>
+            </tr>
+            <tr>
+                <td>Sin trastes</td>
+                <td>Con mástil y sin trastes</td>
+                <td>Con mástil y con trastes</td>
+                <td>Sin teclado</td>
+            </tr>
+        </table>
+
+    </fieldset>
+    <br>
+    <fieldset class="graytext mid">
+        <div class="inlineTag">
+            <div class="space">
+                Un ejemplo de instrumento de cuerda sin trastes sería por ejemplo
+                una viola. Estos instrumentos generan el sonido cuando se "frotan"
+                sus cuerdas con un "arco". Generan un sonido más constante.
+            </div>
+            <div class="mCenter">
+                
+                <img src="../img/contrabajo.jpg"  class="picsize mySlides" usemap="#mapa2">
+                <img src="../img/violadagamba.jpg" class="picsize mySlides" usemap="#mapa3">
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                <!--Aquí haremos el carrousel de imagenes-->
+            </div>
+        </div>
+        <br><br>
+        <div class="inlineTag">
+            <div class="mCenter">
+                <img src="../img/guitar.jpg" class="picsize" usemap="#mapa1">
+            </div>
+            <div class="space">
+                Los instrumentos de cuerda pulsada, en cambio, a pesar de funcionar
+                de una manera similar a los instrumentos de cuerda, se tocan de manera 
+                diferente. Las cuerdas, en este caso, son "pellizcadas" por los dedos 
+                para hacerlas vibrar y así producir música.
+            </div>
+        </div>
+        <br><br><br>
+        <div class="inlineTag">
+            <div class="space">
+                Los instrumentos de cuerdas percutidas son de cuerdas que se golpean o percuten.
+                un buen ejemplo de esto es el piano, que genera el sonido mediante unos "martillos"
+                que golpean unas cuerdas que se encuentran en el interior del mismo y que resuenan 
+                a través de todo el cuerpo del mismo provocando así un sonido envolvente. 
+            </div>
+            <div class="mCenter">
+                <a href="https://www.thomann.de/es/search_dir.html?sw=piano"><img src="../img/piano.jpg" class="picsize" ></a>
+                
+            </div >
+        </div>
+    </fieldset>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer>
+        <p>Footer</p>
+    </footer>
+
+    <!-- Sctipt for slideshow -->
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+    </script>
+    <map name="mapa1">
+        <area target="" alt="Comprar en Amazon" title="Comprar en Amazon" href="https://www.amazon.es/s?k=guitarra&amp;__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;ref=nb_sb_noss_2" coords="0,145,185,143,413,17,482,31,370,168,479,193,482,482,0,481" shape="poly">
+    </map>
+    <map name="mapa2">
+        <area target="" alt="Comprar en Thomann" title="Comprar en Thomann" href="https://www.thomann.de/es/search_dir.html?sw=viola" coords="189,0,162,75,148,139,142,204,141,253,158,253,175,262,188,277,195,295,200,321,198,364,195,406,190,457,182,476,478,476,478,1" shape="poly">
+    </map>
+    <map name="mapa3">
+        <area target="" alt="Comprar en Thomann" title="Comprar en Thomann" href="https://www.thomann.de/es/viola_da_gamba.html" coords="230,1,262,0,268,190,327,250,340,288,337,321,318,330,312,347,310,363,315,376,321,390,330,398,345,399,352,414,359,446,361,466,359,478,133,478,132,448,136,419,142,400,155,397,165,392,174,380,177,361,176,343,170,328,161,322,152,323,147,297,150,272,169,239,198,217,223,186" shape="poly">
+    </map>
+</body>
+</html>

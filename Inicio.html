@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<head>
+    <title>Página principal</title>
+    <link rel="stylesheet" type="text/css" href="./style/estiloInicio.css">   
+</head>
+<body>
+    <!-- INICIO BARRA DE NAVEGACIÓN 1 -->
+    <nav class="menuInicio1" id="Inicio">
+        <a><img class="logo"  src="./img/logo.PNG"/></a>
+        <a class="textoNav">Música por músicos</a>
+    </nav>
+    <!-- FIN BARRA DE NAVEGACIÓN 1 -->
+
+    <!-- INICIO BARRA DE NAVEGACIÓN 2 -->
+    <nav class="menuInicio2" id="wrap">
+        <!-- DEFINICIÓN DE MENÚ DROPDOWN -->
+        <div class="dropdown">
+            <button href="Inicio.html" class="dropbtn"> Home </button> 
+            <div class="dropdown-content">
+                <a href="#Inicio"> Inicio </a>
+                <a href="#Boletin"> Boletín </a>
+                <a href="#Final"> Final </a>
+            </div>
+        </div>
+        <!-- FIN DE MENÚ DROPDOWN -->
+
+        <a href="./cuerda/cuerda.html"> Cuerda </a> 
+        <a href="./percusion/percusion.html"> Percusión </a>
+        <a href="./viento/viento.html"> Viento </a>
+    </nav>
+    <!-- FIN BARRA DE NAVEGACIÓN 2 -->
+
+    <!-- SALTOS DE LÍNEA DE AJUSTE-->
+    <br><br><br>
+
+    <!-- DEFINICIÓN DE FIELDSET FLOTANTE -->
+    <fieldset class="gray mid"> 
+        <div class="mp">
+            Un instrumento musical es un objeto compuesto por la combinación de uno o más sistemas
+            resonantes y medios para su vibración, construido con el fin de producir sonido en uno
+            o más tonos que puedan ser combinados por un intérprete para producir música. Al final,
+            cualquier cosa que produzca sonido armónico puede servir de instrumento musical, pero 
+            la expresión se reserva, generalmente, a objetos que tienen ese propósito en específico...
+        </div>
+    </fieldset>
+    <!-- FIN DE FIELDSET FLOTANTE -->
+
+    <!-- SALTOS DE LÍNEA DE AJUSTE-->
+    <br><br><br>
+
+    <!-- AGRUPAMOS LAS TRES IMÁGENES EN LA MISMA LÍNEA -->
+    <div class="inlineTag" >
+        <!-- DEFINICIÓN DE PRIMERA IMÁGEN (IZQ.) -->
+        <div class="mCenter">
+
+            <img src="./img/violin.jpg" class="picsize pic">
+            <span class="centered">Los violines son un ejemplo de instrumento de cuerda frotada, cuyo sonido es agudo pero melódico.</span>
+            <img src="./img/1C1C1C.png" class="picsize">
+
+        </div>
+        <!-- FIN DE DEFINICIÓN DE PRIMERA IMÁGEN (IZQ.) -->
+
+        <!-- DEFINICIÓN DE SEGUNDA IMÁGEN (MEDIO) -->
+        <div class="mCenter">
+
+            <img src="./img/crosseddrumkit.jpg" class="picsize pic">
+            <span class="centered">La batería es un instrumento rudo y puramente rítmico, pero muy elegante y esencial en muchísimos géneros musicales.</span>
+            <img src="./img/1C1C1C.png" class="picsize">
+
+        </div>
+        <!-- FIN DE DEFINICIÓN DE SEGUNDA IMÁGEN (MEDIO) -->
+
+        <!-- DEFINICIÓN DE TERCERA IMÁGEN (DER.) -->
+        <div class="mCenter">
+
+            <img src="./img/woodwind.jpg" class="picsize pic">
+            <span class="centered">El oboe es un ejemplo de instrumento de viento madera, con un sonido bastante dulce muy común en la música de cámara.</span>
+            <img src="./img/1C1C1C.png" class="picsize">
+
+        </div>
+        <!-- FIN DE DEFINICIÓN DE TERCERA IMÁGEN (DER.) -->
+    </div>
+
+
+    <!-- SALTOS DE LÍNEA DE AJUSTE-->
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <!-- DEFINICIÓN DE FIELDSET CONTENEDOR DEL BOLETÍN -->
+    <fieldset class="form mid" id="Boletin">
+        
+        <h1> Boletín de información </h1> <br>
+
+        <h3> Datos Personales </h3>
+        <form>
+        <!-- RELLENAR DATOS PERSONALES-->
+        <label for="Name"> Nombre: </label>
+        <input type="text" name="Name" id="Name" placeholder="Joe" maxlength="20" required /> <br><br>
+        <label for="Surname"> Apellidos: </label>
+        <input type="text" name="Surname" id="Surname" placeholder="Joseph" maxlength="20" required /> <br><br>
+        <label for="Address"> Dirección </label>
+        <input type="text" name="Address" id="Address" placeholder="Calle Goya, 37, 2 izq." maxlength="30" required/> <br><br>
+        <label for="Date"> Fecha de nacimiento: </label>
+        <input type="date" name="Date" id="Date" required/> <br><br>
+        <label for="Mail"> Correo: </label>
+        <input type="email" name="Mail" id="Mail" placeholder="example@gmail.com" maxlength="40" required/> <br><br>
+        <label for="Tlf"> Teléfono: </label>
+        <input type="tel" name="Tlf" id="Tlf" placeholder="666999666" maxlength="9" minlength="9" required/> <br><br>
+        
+        <h3> Opinión de la Página (Opcional) </h3>
+        <!-- CUADRO DE TEXTO -->
+        <label for="Stud"> Escriba aquí: </label><br>
+        <textarea rows="5" cols="80"></textarea>
+
+        <h3> Instrumento Principal </h3>
+        <!-- SELECCIÓN -->
+        <select>
+            <option value="Emprty">--SELECCIONAR UNA--</option>
+            <option value="Piano">Piano</option>
+            <option value="Guitarra">Guitarra</option>
+            <option value="Bajo">Bajo</option>
+            <option value="Percusión">Percusión</option>
+            <option value="Ukelele">Ukelele</option>
+            <option value="Saxo">Saxofón</option>
+            <option value="Marimba">Marimba</option>
+            <option value="Flauta">Flauta</option>
+            <option value="Mixing">Mixing</option>
+        </select>
+
+        <br><br>
+
+        <h3> Idioma del boletín </h3>
+        <!-- SELECTOR RADIO -->
+        <input type="radio" name="Language" value="Euskera" id="Euskera"/>
+        <label for="Euskera">Euskera</label>
+        <input type="radio" name="Language" value="Espanol" id="Espanol"/>
+        <label for="Espanol">Español</label>
+        <input type="radio" name="Language" value="English" id="English"/>
+        <label for="English">Inglés</label><br><br><br>
+
+        <!-- BOTONES DE FORMULARIO -->
+        <input type="submit" value="Enviar"/>
+        <input type="reset" value="Reiniciar"/>
+    </form>
+
+    </fieldset>
+    <!-- FIN DE DEFINICIÓN DE FIELDSET CONTENEDOR DEL BOLETÍN -->
+
+    <!-- SALTOS DE LÍNEA DE AJUSTE-->
+    <br><br><br><br>
+    
+    <!-- DEFINICIÓN DE IFRAME (YOUTUBE)-->
+    <iframe width="800" height="450" src="https://www.youtube.com/embed/p3G1F3PhyZU" title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- FIN DE DEFINICIÓN DE IFRAME (YOUTUBE)-->
+
+    <!-- SALTOS DE LÍNEA DE AJUSTE-->
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <footer id="Final">
+        <br><br>
+        <a href="https://youtu.be/p3G1F3PhyZU">
+            <img src="img/youtube.png" class="youTube">
+        </a>
+        
+        <!-- CÓDIGO UTF-8 PARA ESPACIO, AYUDA A LA SEPARACIÓN-->
+        &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+
+        <a href="https://www.instagram.com/magic.salad/">
+            <img src="img/instagram.png" class="footerPic">
+
+        </a>
+
+        <!-- CÓDIGO UTF-8 PARA ESPACIO, AYUDA A LA SEPARACIÓN-->
+        &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+        
+        <a href="https://soundcloud.com/opticks_exe">
+            <img src="img/soundcloud.png" class="footerPic">
+        </a>
+        <br>
+        <p class="footerText">Música de los artistas</p>
+    </footer>
+</body>
+</html>
